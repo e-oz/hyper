@@ -28,18 +28,6 @@ url = "1.0"
 version = "0.2"
 default-features = false
 
-[dependencies.openssl]
-version = "0.7"
-optional = true
-
-[dependencies.openssl-verify]
-version = "0.1"
-optional = true
-
-[dependencies.security-framework]
-version = "0.1.4"
-optional = true
-
 [dependencies.solicit]
 version = "0.4"
 default-features = false
@@ -52,7 +40,7 @@ optional = true
 env_logger = "0.3"
 
 [features]
-default = ["ssl"]
-ssl = ["openssl", "openssl-verify", "cookie/secure"]
+default = []
+ssl = ["cookie/secure"]
 serde-serialization = ["serde", "mime/serde"]
 nightly = []
